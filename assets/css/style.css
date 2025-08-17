@@ -9,3 +9,57 @@
 a {
     text-decoration: none;
 }
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #eaffae;
+    overflow: hidden;
+}
+
+.wrapper {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+}
+
+.wrap-1 {
+    background: #f55757;
+    color: #eaffae;
+    left: 0;
+}
+
+.wrap-2 {
+    background: #eaffae;
+    color: #f55757;
+    right: 0;
+}
+
+.slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    font-size: 10em;
+    line-height: 220px;
+    overflow: hidden;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(0, -50%);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
